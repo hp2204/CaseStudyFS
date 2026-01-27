@@ -1,40 +1,27 @@
-body {
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: #FFFFFF;
-  color: #1f2937;
-  transition: all 0.5s ease;
+/* Additional app-specific styles */
+.App {
+  min-height: 100vh;
 }
 
-/* Dark mode */
-body.dark {
-  background-color: #1a1a1a;
-  color: #fef3c7;
+/* Smooth transitions */
+* {
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Buttons */
-button, .btn-toggle {
-  transition: all 0.3s ease;
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-button:hover, .btn-toggle:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
 }
 
-button:active, .btn-toggle:active {
-  transform: translateY(0);
+::-webkit-scrollbar-thumb {
+  background: #D4816E;
+  border-radius: 5px;
 }
 
-/* Navbar theme transition */
-.transition-theme {
-  transition: all 0.5s ease;
-}
-
-/* Links transition */
-.nav-link {
-  transition: color 0.5s ease, font-weight 0.3s ease;
+::-webkit-scrollbar-thumb:hover {
+  background: #b86e5d;
 }

@@ -1,9 +1,17 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Instagram, Facebook, Twitter } from 'lucide-react';
+import { ThemeContext } from '../App';
 
 function Footer() {
+  const { theme, isDarkMode } = useContext(ThemeContext);
+
   return (
-    <footer style={{ backgroundColor: '#6B4423', color: 'white', marginTop: 'auto' }}>
+    <footer style={{ 
+      backgroundColor: isDarkMode ? '#252525' : '#6B4423', 
+      color: 'white', 
+      marginTop: 'auto',
+      transition: 'all 0.3s'
+    }}>
       <div className="container py-4">
         <div className="row">
           <div className="col-md-4 mb-3 mb-md-0">
