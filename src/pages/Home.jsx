@@ -403,7 +403,7 @@ const Home = () => {
         background: `linear-gradient(135deg, ${colors.secondary}, ${colors.accent})`,
         padding: '3rem 2rem',
         textAlign: 'center',
-        color: '#a1e5e4'
+        color: '#daa049'
       }}>
         <h2 style={{ fontSize: '2rem', marginBottom: '1rem' }}>🎓 Student Special</h2>
         <p style={{ fontSize: '1.3rem', marginBottom: '1rem' }}>
